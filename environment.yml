@@ -1,0 +1,22 @@
+# Conda Environment Setup Instructions
+#  - Using an environment.yml file with conda
+#  - Key Terminal Commands:
+#
+#    conda env create -f environment.yml
+#    conda env update --file environment.yml --prune
+#    conda env export --name quantified self-GYM-ML Project > environment.yml
+#    conda env remove --name quantified self-GYM-ML Project
+#    conda env list
+
+name: quantified-self-gym-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.23.5
+  - pandas=1.5.2
+  - matplotlib=3.6.2
+  - bottleneck
+  - ipykernel
+  - ipython
